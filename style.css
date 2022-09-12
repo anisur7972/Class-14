@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* Header Section Css Start  */
+.header-section{
+    background-color: #fff;
+    margin: 5px 0 10px;
+}
+.header-section .menu {
+    text-align: center;
+}
+.header-section .menu ul {
+    list-style: none;
+}
+.header-section .menu ul li {
+    display: inline-block;
+    position: relative;
+}
+.header-section .menu ul li a {
+    text-decoration: none;
+    color: black;
+    background-color: #48dbfb;
+    display: inline-block;
+    padding: 12px;
+    font-weight: 900;
+    transition: all .4s ease;
+}
+.header-section .menu ul li::before {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 32px;
+    left: 0;
+    border-bottom: 3px solid black;
+    transition: all .4s ease;
+    margin-left: 12px;
+}
+.header-section .menu ul li a:hover{
+    background-color: transparent;
+    color: #50cbee;
+}
+.header-section .menu ul li:hover::before{
+width: 65%;
+}
+.header-section .menu ul li:nth-child(3)::before{
+width: 0;
+margin-left: 12px;
+}
+.header-section .menu ul li:nth-child(3):hover::before{
+    width: 70%;
+}
+.header-section .menu ul li:nth-child(4)::before{
+    width: 0;
+    margin-left: 12px;
+}
+.header-section .menu ul li:nth-child(4):hover::before{
+    width: 70%;
+}
+.header-section .menu ul li:nth-child(5)::before{
+    width: 0;
+    margin-left: 13px;
+}
+.header-section .menu ul li:nth-child(5):hover::before{
+    width: 71%;
+}
+
+
+/* Header Section Css End */
+
+/* Hero Section Css Start  */
+.hero {
+    background-color: #3cceff;
+    color: #fff;
+    text-align: center;
+    padding: 70px 0;
+}
+.hero p{
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.hero h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.hero a {
+    display: inline-block;
+    background-color: #fff;
+    padding: 15px 27px;
+    color: #e5e4e3;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all .4s ease;
+    position: relative;
+    z-index: 1;
+}
+.hero a::before{
+    content: '';
+    width: 0;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s ease;
+    border-radius: 6px;
+}
+.hero a:hover::before{
+    width: 100%;
+    color: #fff;
+}
+.hero a i{
+    margin-right: 15px;
+    display: inline-block;
+}
+/* Hero Section Css End */
+
+/* Service Section Css Start  */
+.service-section{
+    background-color: #fff;
+    padding: 80px 0 0;
+}
+.s-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500;
+}
+.s-para{
+    text-align: center;
+    color: #0d0d0d;
+    padding-bottom: 80px;
+}
+.s-img-box{
+    width: 80%;
+    margin: auto;
+}
+
+.img-box{
+   display: inline-block; 
+   margin: 0 15px 15px 0;
+   overflow: hidden;
+   
+}
+.img-box img{
+    height: 250px;
+    width: 250px;
+}
+.img-box .box-one{
+    transform: rotate(0);
+    transition: all .4s ease;
+}
+.img-box:hover .box-one{
+    transform: rotate(360deg);
+}
+.img-box .box-two{
+    transform: rotate(0deg) scale(1);
+    transition: all .4s ease;
+}
+.img-box:hover .box-two{
+    transform: rotate(20deg) scale(1.2);
+}
+.img-box .box-three{
+    transform: rotate(0deg) scale(1);
+    transition: all .4s ease;
+}
+.img-box:hover .box-three{
+    transform: rotate(-25deg)scale(1.2);
+}
+.img-box .box-four{
+    transform: rotate(0deg) scale(1);
+    transition: all .4s ease;
+    margin-right: 0;
+}
+.img-box:hover .box-four{
+    transform: rotate(-20deg) scale(1.2);
+}
+.img-box .box-five{
+    transform: rotate(0deg) scale(1);
+    transition: all .4s ease;
+}
+.img-box:hover .box-five{
+    transform: rotate(20deg) scale(1.2);
+}
+.img-box .box-six{
+    transform: rotate(0deg);
+    transition: all .4s ease;
+}
+.img-box:hover .box-six{
+    transform: rotate(360deg) ;
+}
+.img-box .box-seven{
+    transform:scale(1);
+    transition: all .4s ease;
+}
+.img-box:hover .box-seven{
+    transform:scale(1.2);
+}
+.img-box .box-eight{
+    transform:scale(1);
+    transition: all .4s ease;
+    margin-right: 0;
+}
+.img-box:hover .box-eight{
+    transform:scale(1.3) translate(10px);
+}
+/* Service Section Css End */
+
+/* Video Section CSS Start  */
+.video{
+    width: 80%;
+    margin: 100px auto 20px ;
+}
+.v-heading{
+ text-align: center;
+}
+.v-para{
+text-align: justify;
+margin-bottom: 50px;
+}
+.links{
+    display: inline-block;
+}
+.comon {
+    text-decoration: none;
+    color: #fff;
+    background: black;
+    display: inline-block;
+    padding: 10px 15px;
+    transition: all .4s ease;
+}
+.step1 {
+    margin: 0 200px 0 200px ;
+    transform: rotate(-50deg);
+    
+}
+.step1:hover{
+    transform: rotate(0) scale(1.2);
+    background-color: #3fcdfc;
+    color: #000;
+}
+.step2{
+    margin-right: 200px;
+}
+.step2:hover{
+    transform: scale(1.2);
+    background-color: #3fcdfc;
+    color: #000;
+}
+.step3 {
+    transform: rotate(50deg);
+}
+.step3:hover{
+    transform: rotate(0deg) scale(1.2);
+    background-color: #3fcdfc;
+    color: #000;
+}
+/* Video Section CSS End */
+
+/* Footer Sectin Css Start */
+.footer{
+    padding: 12px;
+    margin-top: 60px;
+}
+/* Footer Sectin Css End */
+
+/* Video Assignment Css Start  */
+.video-assignment{
+    background-color:#ef664d ;
+    text-align: center;
+    padding: 20px;
+}
+.video-assignment a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+/* Video Assignment Css End */
